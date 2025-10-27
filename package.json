@@ -3,9 +3,10 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
+      "build": "echo Pas de build nécessaire && exit 0",
 		"ts:build": "tsc",
 		"start": "node index.js",
-		"build": "esbuild ./index.ts --bundle --platform=node --outdir=build --format=esm --packages=external",
+		"build:s": "esbuild ./index.ts --bundle --platform=node --outdir=build --format=esm --packages=external",
 		"dev": "nodemon --watch build build/index.js",
 		"watch": "esbuild ./index.ts --bundle --platform=node --outdir=build --format=esm --packages=external --watch"
 	},
